@@ -39,18 +39,36 @@
       width: 100%; } }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif; }
 
 #logo {
   height: 100px;
-  border: 1px solid black; }
+  background-image: url("./../images/background.jpg");
+  border: 1px solid black;
+  display: flex;
+  justify-content: center; }
+  #logo div {
+    margin: 10px 0 10px 0;
+    justify-content: center;
+    width: 350px; }
+  #logo h1 {
+    color: white;
+    text-shadow: 3px 2px 0px gray; }
 
 .space {
   margin-top: 10px; }
 
 .leftMenu {
   height: 200px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background-image: url("./../images/background.jpg"); }
+  .leftMenu div {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    margin: 40px 0 0 45px;
+    border-radius: 50%; }
 
 #mainSection {
   height: 200px;
