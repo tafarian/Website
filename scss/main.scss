@@ -58,16 +58,17 @@
   margin-top: 10px;
 }
 
-.leftMenu {
+.coinSpot {
   height: 200px;
   border: 1px solid black;
   background-image: url("./../images/background.jpg");
   div {
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: yellow;
     margin: 40px 0 0 45px;
     border-radius: 50%;
+    border: 1px solid black;
   }
 }
 
@@ -75,11 +76,19 @@
   height: 200px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-}
-
-.rightCol {
-  height: 200px;
-  border: 1px solid red;
+  background-color: firebrick;
+  h2 {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 3px 2px 0px gray;
+  }
+  h1 {
+    padding-top: 15px;
+    margin-left: 5px;
+    color: white;
+    text-shadow: 3px 2px 0px gray;
+  }
 }
 
 #footer {
