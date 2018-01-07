@@ -1,0 +1,67 @@
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .row {
+    &:before, &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    [class*='col-'] {
+      float: left;
+      min-height: 1px;
+    }
+
+    $gridCount: 12;
+
+    @for $i from 1 through $gridCount {
+      .col-#{$i}{
+        width: 100% / $gridCount * $i;
+      }
+    }
+
+    @media (max-width: 640px) {
+      [class*='col-'] {
+        float: none;
+        width:100%;
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+#logo {
+  height: 100px;
+  border: 1px solid black;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.leftMenu {
+  height: 200px;
+  border: 1px solid black;
+}
+
+#mainSection {
+  height: 200px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.rightCol {
+  height: 200px;
+  border: 1px solid red;
+}
+
+#footer {
+  
+}
